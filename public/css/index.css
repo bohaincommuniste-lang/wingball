@@ -1,0 +1,177 @@
+@media (min-width: 1042px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 350px;
+    }
+
+    .tournois-flag, .tournois-price{
+        width: 4vw;
+    }
+
+    .evenement img{
+        border-left: solid 1px black;
+        border-right: solid 1px black;
+    }
+
+    .evenement-container{
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1042px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tournois-flag, .tournois-price{
+        width: 96px;
+    }
+}
+
+.tournois{
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+
+.tournois-container{
+    height: calc(100% - 2rem - 30px);
+    display: flex;
+    flex-direction: column;
+}
+
+.tounois-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex:1;
+
+    margin: 10px 10px 10px 0;
+    background-color: #EFECEA;
+}
+
+.tournois-flag{
+    margin: -10px 0;
+    margin-left: 25px;
+}
+
+.tournois-price{
+    margin-right: 25px;
+}
+
+.tournois-link{
+    color: #a00;
+
+    margin-left: 5px;
+}
+
+.boutique{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.boutique a{
+    text-decoration: none;
+    color: black;
+}
+
+.boutique img{
+    width: 100%;
+}
+
+.boutique-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #EFECEA;
+    height: 100%;
+}
+
+.boutique-item{
+    text-align: center;
+
+    border-radius: 5px;;
+    padding: 5px;
+
+    font-size: 1.1rem;
+
+    border-left: solid 2px white;
+    border-right: solid 2px white;
+}
+
+.boutique-item:first-child{
+    border-left: none;
+}
+
+.boutique-item:last-child{
+    border-right: none;
+}
+
+.boutique-item img{
+    flex:1;
+
+    display: block;
+    margin: auto;
+}
+
+.evenement{
+    grid-column: 2/5;
+    grid-row: 3;
+}
+
+.evenement img{
+    height: 100%;
+    max-width: 100%;
+
+    margin-bottom: -5px;
+}
+
+.evenement-container{
+    height: 100%;
+    text-align: center;
+    background-color: #EFECEA;
+    display: block;
+}
+
+.items{
+    border: 1px solid black;
+    border-radius: 10px;
+
+    margin: 10px;
+
+    overflow: hidden;
+    display: block;
+}
+
+.item-text{
+    font-size: 2rem;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.actualite{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.actualite .titre-article{
+    position: absolute;
+    transform: translateY(-100%);
+    padding: 15px;
+    pointer-events: none;
+
+    font-weight: bold;
+    text-shadow: black 0.15rem 0.15rem;
+    font-size: 1.3rem;
+    max-width: 30%;
+
+    color: #fff;
+}
+
+.actualite img{
+    width: 100%;
+    margin-bottom: -5px;
+
+    border: none;
+}

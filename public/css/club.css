@@ -1,0 +1,30 @@
+h2 img{
+    display: inline-block;
+    height: 2rem;
+    margin: 5px 0 -5px 5px;
+}
+
+.club{
+    margin: 10px 0;
+    padding: 10px;
+
+    background-color: #EFECEA;
+    border: solid 1px black;
+    border-radius: 15px;
+
+    display: grid;
+}
+
+.club:first-child{
+    margin-top: 0;
+}
+
+.name{
+    font-weight: bold;
+    color: #800
+}
+
+.mail{
+    text-decoration: underline;
+    color: #333;
+}

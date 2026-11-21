@@ -1,0 +1,18 @@
+body{
+	display:flex;
+	flex-direction: column;
+}
+
+#content{
+	max-width: 768px;
+	align-self: center;
+	padding-top: 75px;
+}
+
+/*@media (min-width: 1042px){
+    #content{
+        padding: 0 125px 0 125px;
+        border-left: 3px solid lightgrey;
+        border-right: 3px solid lightgrey;
+    }
+}*/

@@ -1,0 +1,97 @@
+.menuboutique {
+	display: flex;
+	justify-content: space-around;
+	background-color: white;
+	height: 50px;
+	width: 100%;
+}
+
+.boutiqueelement{
+	align-self: center;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	padding: 9px;
+}
+
+.soldecontainer{
+	width: 100%;
+	height: 500px;
+	background-image: url(../img/noel.jpeg);
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;	
+	color: white;
+}
+.solde {
+	position: absolute;
+	z-index: -1;
+}
+
+.soldetxt{
+	display: flex;
+	padding-left: 2%;
+	align-items: center;
+	flex:8;
+	font-size: 3rem;
+}
+
+.conditions {
+	display: flex;
+	text-align: left;
+	padding-left: 2%;
+	flex:1;
+}
+
+.solde-amount{
+	position: absolute;
+	display: block;
+}
+
+@media (min-width: 1042px){
+	.solde-amount{
+		font-size: 8rem;
+		right: 15vw;
+		margin-top:50px;
+	}
+}
+
+@media (max-width: 1042px){
+	.solde-amount{
+		font-size: 4rem;
+		right: 10vw;
+		margin-top:250px;
+	}
+}
+
+.categorie {
+	margin: 100px 0;
+}
+
+.item {
+	border-radius: 10px;
+	margin: 10px;
+	border: 1px solid lightgrey;
+	padding: 20px;
+	text-align: center;
+	max-width: 240px;
+	max-height: 320px;
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+}
+
+.item img {
+	width: 200px;
+	height: 250px;
+}
+
+.nomitem {
+	font-weight: bold;
+	margin: 16px 0;
+}
+
+.prix {
+	font-style: italic;
+	margin: 16px 0;
+}
